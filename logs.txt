@@ -1,10 +1,19 @@
-2022-06-26 18:44:12.262560 | File 159.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_HW\coursework-py-basics\vk_photos 
-2022-06-26 18:44:13.553130 | File 12.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_HW\coursework-py-basics\vk_photos 
-2022-06-26 18:44:15.038609 | File 10.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_HW\coursework-py-basics\vk_photos 
-2022-06-26 18:44:17.520436 | File 6.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_HW\coursework-py-basics\vk_photos 
-2022-06-26 18:44:18.705068 | File 8.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_HW\coursework-py-basics\vk_photos 
-2022-06-26 18:44:21.559398 | File 159.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\159.jpg 
-2022-06-26 18:44:24.599834 | File 12.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\12.jpg 
-2022-06-26 18:44:27.939973 | File 10.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\10.jpg 
-2022-06-26 18:44:31.091559 | File 6.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\6.jpg 
-2022-06-26 18:44:35.005697 | File 8.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\8.jpg 
+2022-07-29 00:40:23.162958 | File 12.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_Courseworks_Git\vk_photos 
+2022-07-29 00:40:23.334684 | File 13.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_Courseworks_Git\vk_photos 
+2022-07-29 00:40:23.512018 | File 7.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_Courseworks_Git\vk_photos 
+2022-07-29 00:40:23.668264 | File 8.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_Courseworks_Git\vk_photos 
+2022-07-29 00:40:23.863329 | File 7-2013-08-18.jpg | downloaded from VK to folder D:\Netology_Dima\Neto_Courseworks_Git\vk_photos 
+2022-07-29 00:40:25.761928 | File 12.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\12.jpg 
+2022-07-29 00:40:27.222826 | File 13.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\13.jpg 
+2022-07-29 00:40:28.972464 | File 7.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\7.jpg 
+2022-07-29 00:40:30.506981 | File 8.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\8.jpg 
+2022-07-29 00:40:32.025988 | File 7.jpg | uploaded to Yandex.Disk to folder D:\YandexDisk\Netology\VK_photos\7.jpg 
+2022-07-29 00:40:34.019915 | File 12.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:41:13.370923 | File 12.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:42:01.008734 | File 12.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:44:00.015595 | File 12.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:44:57.905762 | File 12.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:44:59.819855 | File 13.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:45:01.702731 | File 7.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:45:03.613257 | File 8.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 
+2022-07-29 00:45:05.595189 | File 7.jpg | uploaded to Google drive to G:Мой Диск\Neto_photos 

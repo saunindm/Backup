@@ -1,7 +1,8 @@
 import requests
 import os
-from datetime import datetime
 import json
+from log_func import log_func
+
 
 BASE_PATH = os.getcwd()
 PHOTOS_DIR_NAME = 'vk_photos'
@@ -18,14 +19,6 @@ class YaUploader:
             'Content-Type': 'application/json',
             'Authorization': 'OAuth {}'.format(self.token)
         }
-
-    def log_func(self, file_name, data):
-        '''Метод для записи логов.
-        '''
-        with open(file_name, 'a') as file:
-            result = f'{datetime.now()} | {data} \n'
-            file.write(result)
-        return f'File {file_name} updated.'
 
     def upload_from_vk(self, file_path: str, file_name: str):
         '''Метод для загрузки фото на Я.Диск и записи лога загрузки в logs.txt.
@@ -46,7 +39,7 @@ class YaUploader:
         if response.status_code == 201:
             res = f"File {file_name} | uploaded to Yandex.Disk to folder D:\YandexDisk\{file_path}"
             print(res)
-            self.log_func(LOGS_FILE_NAME, res)
+            log_func(LOGS_FILE_NAME, res)
 
     def batch_upload_from_vk(self):
         '''Метод для пакетной загрузки фото на Я.Диск.

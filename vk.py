@@ -2,6 +2,7 @@ import requests
 import os
 from datetime import datetime
 import json
+from log_func import log_func
 
 BASE_PATH = os.getcwd()
 PHOTOS_DIR_NAME = 'vk_photos'
@@ -18,14 +19,19 @@ class VkUser:
             'v': version
         }
 
-    def log_func(self, file_name, data):
-        '''Метод для записи логов.
-        '''
-        with open(file_name, 'a') as file:
-            result = f'{datetime.now()} | {data} \n'
-            file.write(result)
+    def get_albums(self, owner_id):
+        info_albums_dict = {}
+        get_albums_url = self.url + 'photos.getAlbums'
+        get_albums_params = {
+            'owner_id': owner_id,
+        }
+        res = requests.get(get_albums_url, params={**self.params, **get_albums_params}).json()
+        data = res['response']['items']
+        for album in data:
+            info_albums_dict[album['title']] = album['id']
+        return info_albums_dict
 
-    def get_highest_res_profile_photos(self, user_id=None, count=None):
+    def get_highest_res_profile_photos(self, user_id=None, count=None, album_id='profile'):
         '''Метод для скачивания фото с профиля пользователя VK в максимальном размере.
         Для названий фотографий используется количество лайков, если количество лайков одинаково, то добавляется дата загрузки.
         Метод создает json-файл с информацией по скачанным фото и записывает лог скачивания в logs.txt.
@@ -33,7 +39,7 @@ class VkUser:
         photos_get_url = self.url + 'photos.get'
         photos_get_params = {
             'owner_id': user_id,
-            'album_id': 'profile',
+            'album_id': album_id,
             'count': count,
             'extended': 1
         }
@@ -64,7 +70,7 @@ class VkUser:
             if response.status_code == 200:
                 res = f"File {file_name} | downloaded from VK to folder {FULL_PATH}"
                 print(res)
-                self.log_func(LOGS_FILE_NAME, res)
+                print(log_func(LOGS_FILE_NAME, res))
         return f'Download completed.\n' \
                f'File photos_downloaded.json created.\n' \
                f'File {LOGS_FILE_NAME} created.\n'
